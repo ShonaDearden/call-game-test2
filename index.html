@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Call Greeting Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        #timer { font-size: 2em; color: red; }
+        #result { font-size: 1.5em; margin-top: 20px; }
+        #micButton, #startButton { font-size: 1.2em; padding: 10px 20px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Call Greeting Game</h1>
+    <p>Click "Start Call" and begin your greeting within <strong>3 seconds</strong> after the beep!</p>
+    <button id="startButton">📞 Start Call</button>
+    <div id="timer">3</div>
+    <button id="micButton">🎤 Start Speaking</button>
+    <br><br>
+    <input type="text" id="typedInput" placeholder="Or type your greeting here" size="50">
+    <div id="result"></div>
+
+    <audio id="beep" src="beep.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
